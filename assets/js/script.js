@@ -106,11 +106,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let { answer } = questions[currentQuestionIndex];
         selectedOptionElement.classList.add(selectedOption === answer ? 'correct' : 'wrong');
         let optionsContainer = selectedOptionElement.parentElement;
+
         Array.from(optionsContainer.children).forEach(child => {
             child.onclick = null;
+            });
             
-        });
-        selectedOption === answer ? correctScore++ : wrongScore++;
+            if (selectedOption === answer) {
+                correctScore++;
+            } else {
+                wrongScore++;
+            }
+
         document.getElementById('correct-score').textContent = correctScore;
         document.getElementById('wrong-score').textContent = wrongScore;
         setTimeout(() => {

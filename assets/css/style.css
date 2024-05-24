@@ -90,7 +90,7 @@ label, input {
 }
 /* Hover effect for options */
 .options div:hover {
-    background: #d4d4d4;
+    background: #cabec5;
 }
 /* Correct answer */
 .options div.correct {
