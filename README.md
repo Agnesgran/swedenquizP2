@@ -1,112 +1,117 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Sweden Quiz
 
-Welcome Agnes Gran,
+Dive into the fascinating world of Sweden with the "Sweden Quiz"! This engaging mini online quiz is designed to test and expand your knowledge about Sweden's geography, culture, and history in a fun and interactive way.
+Whether you're a student, a trivia enthusiast, or just curious about Sweden, the "Sweden Quiz" offers a delightful and educational experience. Challenge yourself and see how much you really know about this beautiful Scandinavian country!
+This quiz is targeted towards both adults and children who like to learn in a fun way. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsice Mockup](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/landingmockup.png)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+## Features 
+Landing page - A welcome screen with the name of the quiz, the request to put in a username, a start button to begin the quiz, and a scoreboard set to 0/0.
 
-## Gitpod Reminders
+Questions - Header with the quiz name, the relevant question underneath and a scoreboard that updates when the user selects an answer.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Quiz Completion - The last page shows the name of the quiz, a statement indicating the quiz is completed, the username chosen at the beginning, and the final score the user achieved.
 
-`python3 -m http.server`
+### Existing Features
 
-A blue button should appear to click: _Make Public_,
+- __Username input__
 
-Another blue button should appear to click: _Open Browser_.
+  - Featured on the first page is a username input box that gives an alert if a username is not submitted.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+![Username Input](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/usernameInput.png)
 
-A blue button should appear to click: _Make Public_,
+- __Start Quiz Button__
 
-Another blue button should appear to click: _Open Browser_.
+  - This button lets the user start the quiz and redirects the user to the first question.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Start Quiz Button](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/startQuiz1.png)
 
-To log into the Heroku toolbelt CLI:
+- __Answer Options__ 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - When the user presses one of the answers, the answer will turn green if correct, and red if wrong. And then the user is redirected to the next question.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+![Answer Options](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/questions.png)
 
-------
+- __Scoreboard__
 
-## Release History
+  - This feature keeps track of the current right/wrong answers the user have clicked, and is updated after every selected answer.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Scoreboard](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/scoreboard.png)
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Features Left to Implement
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Timer: Add a countdown timer for each question to increase the challenge and excitement.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Difficulty Levels: Introduce different difficulty levels (easy, medium, hard) to cater to various users' knowledge levels.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Question Bank: Create a larger pool of questions and randomize them for each quiz session to provide a unique experience every time.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Validator Testing 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/w3chtml.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/w3ccss.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- JSHint
+ - No errors were found when passing through the official JSHint validator (https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/jshint.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Lighthouse 
+Testing for desktop and mobile got the same result:
+(https://github.com/Agnesgran/swedenquizP2/blob/main/assets/images/lighthousemb.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Devices and Browsers
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The quiz has been tested in the following:
+- Devices:
+Lenovo Yoga 530,
+Iphone 15 Pro,
+Samsung galaxy s20.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Browsers: 
+Safari,
+Google Chrome,
+Microsoft Edge,
+Mozilla Firefox.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- The quiz appears as intended on all devices and browsers. 
 
-------
+- No known bugs are left unsolved.
 
-## FAQ about the uptime script
+## Deployment
 
-**Why have you added this script?**
+- The site was deployed to GitHub Pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Main Branch
+  - Once the main branch has been selected, Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repository 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The live link can be found here - https://agnesgran.github.io/swedenquizP2/
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Credits 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Content 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- Colour palette from coolors (https://coolors.co/)
+- Favicon is created at (https://favicon.io/)
+- Fonts used were found on google fonts. (https://fonts.google.com/)
+- source for "timer"
+https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+- The questions and answers for the quiz were generated by AI,chatGPT.
 
-**So….?**
+### Reference Material
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- (https://developer.mozilla.org/)
+- (https://javascript.info/)
+- (https://www.w3schools.com/)
+- Learning material from JavaScript Essentials.
 
-**Can I opt out?**
+### Media
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- Image to display responsiveness in README taken from (https://techsini.com/multi-mockup/index.php)
