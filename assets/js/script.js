@@ -1,5 +1,7 @@
+// Wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
+    
         {
             question: "What is the capital of Sweden?",
             options: ["Stockholm", "Gothenburg", "Malmö", "Uppsala"],
@@ -57,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let wrongScore = 0;
     let username = '';
 
+    // Function to start the quiz, hide username input, and show the first question
     function startSweQuiz() {
         username = document.getElementById('username').value;
         if (username) {
@@ -69,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Load the current question and its options
     function loadSweQuestion() {
         let sweQuestions = document.getElementById('sweQuestions');
         sweQuestions.innerHTML = '';
@@ -84,20 +88,20 @@ document.addEventListener('DOMContentLoaded', () => {
             showFinalScore();
         }
     }
-
+//Create an HTML element with given tag, class, and text content
     function createElement(tag, className, textContent = '') {
         let element = document.createElement(tag);
         element.className = className;
         element.textContent = textContent;
         return element;
     }
-
+//Create an option element for a question
     function createOptionElement(option) {
         let optionElement = createElement('div', 'option', option);
         optionElement.onclick = () => handleAllAnswers(optionElement, option);
         return optionElement;
     }
-
+//Handle the user's answer selection
     function handleAllAnswers(selectedOptionElement, selectedOption) {
         let { answer } = questions[currentQuestionIndex];
         selectedOptionElement.classList.add(selectedOption === answer ? 'correct' : 'wrong');
@@ -114,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loadSweQuestion();
         }, 1000);
     }
-
+//Display the final score at the end of the quiz
     function showFinalScore() {
         let questionContainer = document.getElementById('sweQuestions');
         questionContainer.innerHTML = `<p>Quiz completed! ${username}, your score is ${correctScore} correct and ${wrongScore} wrong out of ${questions.length}.</p>`;
