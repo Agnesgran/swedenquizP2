@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-weight: bold;
 }
 
 .swedenquizbox {
@@ -38,6 +39,7 @@ label, input {
     font-size: 1.2em;
     color:#223843;
     font-weight: bold;
+    background-color:#d8b4a0;
 }
 
 .startQuizButton {
@@ -46,11 +48,14 @@ label, input {
     font-size: 1em;
     margin-top: 20px;
     cursor: pointer;
-    color:#223843
+    color:#223843;
+    background-color:#dbd3d8;
+    font-weight: bold;
+    }
 
     
 
-}
+
 
 .hidden {
     display: none;
@@ -70,7 +75,7 @@ label, input {
 }
 
 .options div {
-    background: #e4e4e4;
+    background: #dbd3d8;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
@@ -83,9 +88,9 @@ label, input {
 }
 
 .options div.correct {
-    background-color: #4CAF50 !important;
+    background-color: #BED9A0 !important;
 }
 
 .options div.wrong {
-    background-color: #F44336 !important; 
+    background-color: #E46565 !important; 
 }
