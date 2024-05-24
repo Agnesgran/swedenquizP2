@@ -1,9 +1,12 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
 /*default styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #A49177;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +16,38 @@ body {
 .swedenquizbox {
     width: 80%;
     max-width: 600px;
-    background: #fff;
+    background: #8A8168;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.539);
     text-align: center;
     border-radius: 10px;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #181919;
+}
+
+label, input {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input {
+    background-color: #BCA085;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #BCA085;
+    color: #181919;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
 }
