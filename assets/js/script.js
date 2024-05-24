@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let optionsContainer = selectedOptionElement.parentElement;
         Array.from(optionsContainer.children).forEach(child => {
             child.onclick = null;
-            // child.classList.add(child.textContent === answer ? 'correct' : 'wrong');
+            
         });
         selectedOption === answer ? correctScore++ : wrongScore++;
         document.getElementById('correct-score').textContent = correctScore;

@@ -1,7 +1,7 @@
 /*Import Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
 
-
+/* General body styling */
 body {
     font-family: "Poiret One", sans-serif;
     margin: 0;
@@ -15,6 +15,7 @@ body {
     font-weight: bold;
 }
 
+/* Main quiz container*/
 .swedenquizbox {
     width: 80%;
     max-width: 600px;
@@ -25,13 +26,14 @@ body {
     border-radius: 10px;
     margin: auto;
 }
-
+/* Header */
 h1 {
     font-family: "Poiret One", sans-serif;
     margin-bottom: 20px;
     color:#223843;
 }
 
+/* Label and input field */
 label, input {
     font-family: "Poiret One", sans-serif;
     display: block;
@@ -42,6 +44,7 @@ label, input {
     background-color:#d8b4a0;
 }
 
+/* Start button */
 .startQuizButton {
     font-family: "Poiret One", sans-serif;
     padding: 10px 20px;
@@ -56,11 +59,12 @@ label, input {
     
 
 
-
+/* Hidden class for elements that should be hidden */
 .hidden {
     display: none;
 }
 
+/* Question styling */
 .question {
     font-family: "Poiret One", sans-serif;
     margin-bottom: 20px;
@@ -68,12 +72,14 @@ label, input {
     font-weight: bold;
 }
 
+/* Options container styling */
 .options {
     display: flex;
     flex-direction: column;
     font-weight: bold;
 }
 
+/* Individual option styling */
 .options div {
     background: #dbd3d8;
     padding: 10px;
@@ -82,15 +88,15 @@ label, input {
     cursor: pointer;
     transition: background 0.3s;
 }
-
+/* Hover effect for options */
 .options div:hover {
     background: #d4d4d4;
 }
-
+/* Correct answer */
 .options div.correct {
     background-color: #BED9A0 !important;
 }
-
+/* Wrong answer */
 .options div.wrong {
     background-color: #E46565 !important; 
 }
