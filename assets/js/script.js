@@ -29,22 +29,22 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             question: "What is the name of Sweden's current king?",
-            options: ["Carl XVI Gustaf", "Harald V", "Philippe", "Henrik"],
+            options: ["Philippe", "Harald V", "Carl XVI Gustaf", "Henrik"],
             answer: "Carl XVI Gustaf"
         },
         {
             question: "Which Swedish company is known for its furniture?",
-            options: ["IKEA", "H&M", "Volvo", "Ericsson"],
+            options: ["H&M", "IKEA", "Volvo", "Ericsson"],
             answer: "IKEA"
         },
         {
             question: "What is the name of the Swedish festival celebrated around the summer solstice?",
-            options: ["Midsummer", "Christmas", "Easter", "Walpurgis Night"],
+            options: ["Walpurgis Night", "Christmas", "Easter", "Midsummer"],
             answer: "Midsummer"
         },
         {
             question: "What is the name of the famous Swedish detective series by Stieg Larsson?",
-            options: ["Millennium", "Harry Potter", "The Girl with the Dragon Tattoo", "Sherlock Holmes"],
+            options: ["The Girl with the Dragon Tattoo", "Harry Potter", "Millennium", "Sherlock Holmes"],
             answer: "Millennium"
         },
         {
