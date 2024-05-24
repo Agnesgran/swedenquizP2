@@ -1,11 +1,12 @@
-/* Import Google Fonts */
+/*Import Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
-/*default styling */
+
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poiret One", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #A49177;
+    background-color: #d77a61;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -16,40 +17,75 @@ body {
 .swedenquizbox {
     width: 80%;
     max-width: 600px;
-    background: #8A8168;
+    background: #d8b4a0;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.539);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 10px;
+    margin: auto;
 }
 
 h1 {
+    font-family: "Poiret One", sans-serif;
     margin-bottom: 20px;
-    color: #181919;
+    color:#223843;
 }
 
 label, input {
+    font-family: "Poiret One", sans-serif;
     display: block;
     margin: 10px auto;
     font-size: 1.2em;
+    color:#223843;
     font-weight: bold;
 }
 
-input {
-    background-color: #BCA085;
-}
-
-button {
+.startQuizButton {
+    font-family: "Poiret One", sans-serif;
     padding: 10px 20px;
     font-size: 1em;
-    font-weight: bold;
     margin-top: 20px;
     cursor: pointer;
-    background-color: #BCA085;
-    color: #181919;
-    border-radius: 10px;
+    color:#223843
+
+    
+
 }
 
 .hidden {
     display: none;
+}
+
+.question {
+    font-family: "Poiret One", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.options div {
+    background: #e4e4e4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.options div:hover {
+    background: #d4d4d4;
+}
+
+.options div.correct {
+    background-color: #4CAF50 !important;
+}
+
+.options div.wrong {
+    background-color: #F44336 !important; 
 }
